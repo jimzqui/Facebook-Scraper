@@ -1,0 +1,298 @@
+body {
+  font-family: sans-serif;
+  font-size: 12px;
+  margin: 0;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Slab', serif;
+}
+
+
+h1 {
+  margin-top: 5px;
+}
+
+
+#container {
+  width: 70%;
+  margin: 10px auto;
+}
+
+#container .container {
+  width: 100%;
+  position: relative;
+}
+#container .container .row {
+  margin-left: 0;
+}
+#container .container .span13 {
+  margin-left: 0;
+  width: 100%;
+  border-bottom: 1px dashed #eaeaea;
+  border-top: 1px dashed #eaeaea;
+  margin: 0 0 20px;
+  padding: 15px 0;
+}
+
+#container table {
+  border-bottom: 1px solid #eaeaea;
+  border-top: 1px dashed #eaeaea;
+  margin: 15px 0;
+}
+
+
+#scraper {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: #888888 #eaeaea;
+  border-image: none;
+  border-left: 1px solid #eaeaea;
+  border-right: 1px solid #eaeaea;
+  border-style: solid;
+  border-width: 2px 1px;
+  left: 50%;
+  margin: -145px 0 0 -185px;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  width: 350px;
+}
+
+#scraper .note {
+  background: none repeat scroll 0 0 #eeeeee;
+  border-bottom: 1px solid #dadada;
+  border-top: 1px solid #dadada;
+  display: block;
+  margin: 0 40px 15px;
+  padding: 10px;
+  text-align: center;
+}
+
+#scraper .status {
+  left: 50%;
+  margin: 0 0 0 -175px;
+  position: relative;
+  text-align: left;
+  width: 350px;
+}
+#scraper .status p {
+  text-align: center;
+}
+#scraper .status h3 {
+  text-align: center;
+}
+#scraper .status ul {
+  margin: 0 0 10px;
+  padding: 0;
+}
+#scraper .status li {
+  background: url("../img/ajax-loader.gif") no-repeat scroll 0 12px transparent;
+  border-top: 1px solid #eeeeee;
+  list-style: none outside none;
+  margin: 0 40px;
+  padding: 10px 0 10px 18px;
+}
+#scraper .status .done {
+  background: none;
+  font-weight: bold;
+}
+#scraper .status .done:before {
+  margin: 0 4px 0 -14px;
+  content: '✔';
+}
+
+
+#top-btns {
+  position: absolute;
+  right: 0;
+  top: 5px;
+}
+
+#top-btns .btn {
+  margin-left: 10px;
+}
+
+#top-btns #get-data {
+  display: none;
+}
+
+
+.modal-dialog ul {
+  list-style: none !important;
+  margin: 0 0 10px 0;
+}
+.modal-dialog ul li {
+  width: 29%;
+  display: inline-block;
+  border-bottom: 1px solid #eaeaea;
+  border-right: 1px solid #eaeaea;
+  padding: 2%;
+}
+.modal-dialog ul li:nth-child(3n) {
+  border-right: none;
+}
+
+.modal-dialog hr {
+  border-color: white;
+  display: block;
+  margin: -11px 0 0;
+  position: relative;
+  z-index: 1;
+}
+
+
+.table thead th {
+  vertical-align: top;
+}
+
+
+label, input, button, select, textarea {
+  font-size: 12px;
+}
+
+
+.activity-btn {
+  cursor: pointer;
+  width: 40px;
+}
+
+
+.page-title {
+  margin: 0;
+  padding: 0 0 10px;
+  font-weight: bold;
+}
+
+.page-title span {
+  color: #555555;
+  font-weight: normal;
+}
+
+
+#newpage {
+  width: 97%;
+}
+
+
+#activity-table_length, #activity-table_filter {
+  text-transform: uppercase;
+  width: 50%;
+  height: 45px;
+}
+
+
+#activity-table_length select, #activity-table_filter input {
+  margin-bottom: 5px;
+}
+
+
+.aligncenter {
+  text-align: center !important;
+}
+
+
+/*
+ * ===== Tipsy =====
+ */
+.tipsy {
+  padding: 4px;
+  font-size: 12px;
+  position: absolute;
+  z-index: 1000;
+}
+
+
+.tipsy-inner {
+  padding: 2px 10px 2px 10px;
+  background-color: #1d1d1d;
+  color: white;
+  max-width: 200px;
+  text-align: center;
+}
+
+
+.tipsy-inner {
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+}
+
+
+.tipsy-arrow {
+  position: absolute;
+  background: url('../images/tipsy.gif') no-repeat top left;
+  width: 9px;
+  height: 5px;
+}
+
+
+.tipsy-n .tipsy-arrow {
+  top: 0;
+  left: 50%;
+  margin-left: -4px;
+}
+
+
+.tipsy-nw .tipsy-arrow {
+  top: 0;
+  left: 10px;
+}
+
+
+.tipsy-ne .tipsy-arrow {
+  top: 0;
+  right: 10px;
+}
+
+
+/*
+ * .tipsy-s { margin-top: -5px; }
+ * .tipsy-w { margin-left: 5px; }
+ * .tipsy-e { margin-right: -5px; }
+ * .tipsy-n { margin-top: 5px; }
+ */
+.tipsy-s .tipsy-arrow {
+  bottom: 0;
+  left: 50%;
+  margin-left: -4px;
+  background-position: bottom left;
+}
+
+
+.tipsy-sw .tipsy-arrow {
+  bottom: 0;
+  left: 10px;
+  background-position: bottom left;
+}
+
+
+.tipsy-se .tipsy-arrow {
+  bottom: 0;
+  right: 10px;
+  background-position: bottom left;
+}
+
+
+.tipsy-e .tipsy-arrow {
+  top: 50%;
+  margin-top: -4px;
+  right: 0;
+  width: 5px;
+  height: 9px;
+  background-position: top right;
+}
+
+
+.tipsy-w .tipsy-arrow {
+  top: 50%;
+  margin-top: -4px;
+  left: 0;
+  width: 5px;
+  height: 9px;
+}
+
+
