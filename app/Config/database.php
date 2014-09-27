@@ -63,7 +63,7 @@ class DATABASE_CONFIG {
 
 	public $default = array();
 
-	public $local = array(
+	public $development = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => 'localhost',
@@ -74,22 +74,22 @@ class DATABASE_CONFIG {
 		'encoding' => 'utf8',
 	);
 	
-	public $staging = array(
+	public $production = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => 'localhost',
-		'login' => 'datascra_datascr',
-		'password' => 'PsI*+KNMl3lz',
-		'database' => 'datascra_datascraper',
+		'login' => 'root',
+		'password' => '',
+		'database' => 'facebookscraper',
 		'prefix' => '',
 		'encoding' => 'utf8',
 	);
 	
 	public function __construct() {
 		if (strpos(env('HTTP_HOST'), 'localhost') !== false) {
-			$this->default = $this->local;
+			$this->default = $this->development;
 		} else {
-			$this->default = $this->staging;
+			$this->default = $this->production;
 		}
 	}
 	
